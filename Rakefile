@@ -22,4 +22,10 @@ namespace :cpp do
     system command
   end
 end
-
+namespace :go do
+  desc "run go program"
+  task :run do
+    command = "go run go/number_guess.go"
+    system command
+  end
+end
