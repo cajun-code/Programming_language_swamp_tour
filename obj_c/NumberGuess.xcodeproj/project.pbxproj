@@ -1,0 +1,237 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE0FA1BD152D3C0100071F80 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0FA1BC152D3C0100071F80 /* Foundation.framework */; };
+		CE0FA1C0152D3C0100071F80 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0FA1BF152D3C0100071F80 /* main.m */; };
+		CE0FA1C4152D3C0100071F80 /* NumberGuess.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = CE0FA1C3152D3C0100071F80 /* NumberGuess.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CE0FA1B6152D3C0100071F80 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				CE0FA1C4152D3C0100071F80 /* NumberGuess.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CE0FA1B8152D3C0100071F80 /* NumberGuess */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NumberGuess; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE0FA1BC152D3C0100071F80 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CE0FA1BF152D3C0100071F80 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE0FA1C2152D3C0100071F80 /* NumberGuess-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NumberGuess-Prefix.pch"; sourceTree = "<group>"; };
+		CE0FA1C3152D3C0100071F80 /* NumberGuess.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = NumberGuess.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE0FA1B5152D3C0100071F80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE0FA1BD152D3C0100071F80 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE0FA1AD152D3C0000071F80 = {
+			isa = PBXGroup;
+			children = (
+				CE0FA1BE152D3C0100071F80 /* NumberGuess */,
+				CE0FA1BB152D3C0100071F80 /* Frameworks */,
+				CE0FA1B9152D3C0100071F80 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE0FA1B9152D3C0100071F80 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE0FA1B8152D3C0100071F80 /* NumberGuess */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE0FA1BB152D3C0100071F80 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE0FA1BC152D3C0100071F80 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE0FA1BE152D3C0100071F80 /* NumberGuess */ = {
+			isa = PBXGroup;
+			children = (
+				CE0FA1BF152D3C0100071F80 /* main.m */,
+				CE0FA1C3152D3C0100071F80 /* NumberGuess.1 */,
+				CE0FA1C1152D3C0100071F80 /* Supporting Files */,
+			);
+			path = NumberGuess;
+			sourceTree = "<group>";
+		};
+		CE0FA1C1152D3C0100071F80 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE0FA1C2152D3C0100071F80 /* NumberGuess-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE0FA1B7152D3C0100071F80 /* NumberGuess */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE0FA1C7152D3C0100071F80 /* Build configuration list for PBXNativeTarget "NumberGuess" */;
+			buildPhases = (
+				CE0FA1B4152D3C0100071F80 /* Sources */,
+				CE0FA1B5152D3C0100071F80 /* Frameworks */,
+				CE0FA1B6152D3C0100071F80 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NumberGuess;
+			productName = NumberGuess;
+			productReference = CE0FA1B8152D3C0100071F80 /* NumberGuess */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE0FA1AF152D3C0000071F80 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = CajunCode;
+			};
+			buildConfigurationList = CE0FA1B2152D3C0000071F80 /* Build configuration list for PBXProject "NumberGuess" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CE0FA1AD152D3C0000071F80;
+			productRefGroup = CE0FA1B9152D3C0100071F80 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE0FA1B7152D3C0100071F80 /* NumberGuess */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE0FA1B4152D3C0100071F80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE0FA1C0152D3C0100071F80 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CE0FA1C5152D3C0100071F80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CE0FA1C6152D3C0100071F80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CE0FA1C8152D3C0100071F80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NumberGuess/NumberGuess-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CE0FA1C9152D3C0100071F80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NumberGuess/NumberGuess-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE0FA1B2152D3C0000071F80 /* Build configuration list for PBXProject "NumberGuess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE0FA1C5152D3C0100071F80 /* Debug */,
+				CE0FA1C6152D3C0100071F80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE0FA1C7152D3C0100071F80 /* Build configuration list for PBXNativeTarget "NumberGuess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE0FA1C8152D3C0100071F80 /* Debug */,
+				CE0FA1C9152D3C0100071F80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE0FA1AF152D3C0000071F80 /* Project object */;
+}
