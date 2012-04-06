@@ -22,6 +22,23 @@ namespace :cpp do
     system command
   end
 end
+namespace :objc do
+  desc "clean the xcode project"
+  task :clean do
+    command = "xcodebuild -project ./obj_c/NumberGuess.xcodeproj clean"
+    system command
+  end
+  desc "build the xcode project"
+  task :build do
+    command = "xcodebuild -project ./obj_c/NumberGuess.xcodeproj clean build"
+    system command
+  end
+  desc "Run the Objective C Program"
+  task :run => :build do
+    command = "obj_c/build/Release/NumberGuess"
+    system command
+  end
+end
 namespace :go do
   desc "run go program"
   task :run do
