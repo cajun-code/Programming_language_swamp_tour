@@ -22,6 +22,30 @@ namespace :cpp do
     system command
   end
 end
+namespace :c do
+  program_name = "NumberGuess"
+  desc "Clean the C app"
+  task :clean do
+    File.delete program_name if File.exist? program_name
+  end
+  desc "Build the c++ sample app"
+  task :build => :clean do
+    executable = "gcc"
+    options = [
+      "-o #{program_name}",
+      "c/#{program_name}.c"
+    ]
+    command = "#{executable} #{options.join(" ")}"
+    puts "Building: #{command}"
+    system command
+  end
+  desc "run the C application"
+  task :run => :build do
+    command = "./#{program_name}"
+    puts "running: #{command}"
+    system command
+  end
+end
 namespace :objc do
   desc "clean the xcode project"
   task :clean do

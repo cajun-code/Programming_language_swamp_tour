@@ -8,24 +8,25 @@
 
 #import <Foundation/Foundation.h>
 #import <stdlib.h>
-
+#import "GuessControl.h"
 int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
         
       printf("Welcome to the Number Guess Game\n");
-
-      int my_number = arc4random() % 100; /* rand() % 100; */
+        GuessControl * gc = [[GuessControl alloc]init];
+      
       int guess = 0;
-      printf("I am thinking of a number between 1 and 100\n");
-        while( my_number != guess){
-          printf("Guess my number:");
-          scanf("%d", &guess);
-          if (guess == my_number){
+      
+        while( TRUE ){
+           printf("Guess my number:");
+           scanf("%d", &guess);
+            int result = [gc check: guess] ;
+          if (result == 0){
               printf("\nYou Guessed it!!!\n");
             break;
-          }else if (guess > my_number){
+          }else if (result == -1){
               printf( "Lower ...\n");
           }else{
               printf( "Higher ...\n");
