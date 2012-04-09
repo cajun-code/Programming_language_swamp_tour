@@ -28,7 +28,7 @@ namespace :c do
   task :clean do
     File.delete program_name if File.exist? program_name
   end
-  desc "Build the c++ sample app"
+  desc "Build the c sample app"
   task :build => :clean do
     executable = "gcc"
     options = [
