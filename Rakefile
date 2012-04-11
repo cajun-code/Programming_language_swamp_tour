@@ -89,3 +89,10 @@ namespace :java do
   end
 end
 
+namespace :python do
+  desc "Run puthon example"
+  task :run do
+    command = "python python/number_guess.py"
+    system command
+  end
+end
