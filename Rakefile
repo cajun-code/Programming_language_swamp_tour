@@ -90,9 +90,16 @@ namespace :java do
 end
 
 namespace :python do
-  desc "Run puthon example"
+  desc "Run python example"
   task :run do
     command = "python python/number_guess.py"
+    system command
+  end
+end
+namespace :ruby do
+  desc "Run ruby example"
+  task :run do
+    command = "ruby ruby/number_guess.rb"
     system command
   end
 end
