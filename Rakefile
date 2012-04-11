@@ -70,3 +70,22 @@ namespace :go do
     system command
   end
 end
+
+namespace :java do
+  desc "run java Program"
+  task :run => :build do
+    command = " java -cp ./java NumberGuess"
+    system command
+  end
+  desc "build the java programming"
+  task :build => :clean do
+    command = "javac java/NumberGuess.java"
+    system command
+  end
+  desc "clean the java builds"
+  task :clean do
+    command = "rm -v java/*.class"
+    system command
+  end
+end
+
