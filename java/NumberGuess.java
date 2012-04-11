@@ -1,6 +1,8 @@
 import java.util.Random;
 import java.io.DataInputStream;
 import java.io.IOException;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 
 public class NumberGuess{
   
@@ -15,22 +17,24 @@ public class NumberGuess{
     if (thinking_number == guess) {
       return 0;
     }else if(thinking_number > guess){
-      return 1;
-    }else{
       return -1;
+    }else{
+      return 1;
     }
   }
   public static void main(String[] args){
     System.out.println("Welcome to the Number Guess Game");
     
     NumberGuess ng = new NumberGuess();
-    int guess = 0;
+    String guess = "";
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     DataInputStream dis = new DataInputStream(System.in);
     while(true){
       try{
-        System.out.print("Guess my Number");
-        guess = dis.readInt();
-        int result = ng.check(guess);
+        System.out.print("Guess my Number: ");
+        guess = br.readLine();
+        //System.out.println ("Your Guess: " + guess);
+        int result = ng.check(Integer.parseInt(guess));
         if (result == 0){
           System.out.println("\nYou Guessed it!!!\n");
           break;
