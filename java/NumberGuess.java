@@ -27,7 +27,8 @@ public class NumberGuess{
     
     NumberGuess ng = new NumberGuess();
     String guess = "";
-    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    BufferedReader br = new BufferedReader(
+      new InputStreamReader(System.in));
     DataInputStream dis = new DataInputStream(System.in);
     while(true){
       try{

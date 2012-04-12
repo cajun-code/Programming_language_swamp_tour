@@ -1,7 +1,7 @@
 function check_number(){
   var guess = parseInt($("#guess").val());
   if (guess == window.thinking_number){
-    update_display("You Gussed it");
+    update_display("You Guessed it");
   }else if(guess > window.thinking_number){
     update_display("Lower... Guess Again");
   }else{

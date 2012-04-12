@@ -11,7 +11,7 @@ class NumberGuess
     elsif @thinking_number > guess
       result = -1
     else
-      resutl = 1
+      result = 1
     end
     result 
   end
