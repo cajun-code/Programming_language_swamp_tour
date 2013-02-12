@@ -1,0 +1,6 @@
+name: NumberGuess
+description: A sample WebUI application
+dependencies:
+  js: any
+  browser: any
+  web_ui: any

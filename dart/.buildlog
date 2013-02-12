@@ -1,0 +1,163 @@
+---
+build.dart --machine --full
+[{"method":"mapping","params":{"from":"web/numberguess.html","to":"web/out/numberguess.html"}}]
+Total time spent on web/numberguess.html                     -- 173 ms
+build.dart finished [370 ms]
+
+---
+build.dart --machine --changed=web/out/numberguess.dart --changed=web/out/numberguess.html --changed=web/out/nu...
+
+build.dart finished [243 ms]
+
+---
+build.dart --machine --full
+[{"method":"mapping","params":{"from":"web/numberguess.html","to":"web/out/numberguess.html"}}]
+Uncaught Error: FileIOException: Cannot retrieve full path for file 'web/packages' (OS Error: No such file or directory, errno = 2)
+Stack Trace:
+#0      _File.throwIfError (dart:io:1403:7)
+#1      _File.fullPathSync (dart:io:1267:17)
+#2      symlinkPubPackages (package:web_ui/dwc.dart:145:58)
+#3      run.<anonymous closure>.<anonymous closure> (package:web_ui/dwc.dart:78:38)
+#4      _ThenFuture._sendValue (dart:async:405:24)
+
+
+Unhandled exception:
+FileIOException: Cannot retrieve full path for file 'web/packages' (OS Error: No such file or directory, errno = 2)
+#0      _FutureImpl._scheduleUnhandledError.<anonymous closure> (dart:async:333:9)
+#1      _Timer._createTimerHandler._handleTimeout (dart:io:7240:28)
+#2      _Timer._createTimerHandler._handleTimeout (dart:io:7248:7)
+#3      _Timer._createTimerHandler.<anonymous closure> (dart:io:7256:23)
+#4      _ReceivePortImpl._handleMessage (dart:isolate-patch:40:92)
+build.dart finished [585 ms]
+
+---
+build.dart --machine --changed=pubspec.lock
+
+build.dart finished [205 ms]
+
+---
+build.dart --machine --changed=web/numberguess.dart
+[{"method":"mapping","params":{"from":"web/numberguess.html","to":"web/out/numberguess.html"}}]
+Uncaught Error: FileIOException: Cannot retrieve full path for file 'web/packages' (OS Error: No such file or directory, errno = 2)
+Stack Trace:
+#0      _File.throwIfError (dart:io:1403:7)
+#1      _File.fullPathSync (dart:io:1267:17)
+#2      symlinkPubPackages (package:web_ui/dwc.dart:145:58)
+#3      run.<anonymous closure>.<anonymous closure> (package:web_ui/dwc.dart:78:38)
+#4      _ThenFuture._sendValue (dart:async:405:24)
+
+
+Unhandled exception:
+FileIOException: Cannot retrieve full path for file 'web/packages' (OS Error: No such file or directory, errno = 2)
+#0      _FutureImpl._scheduleUnhandledError.<anonymous closure> (dart:async:333:9)
+#1      _Timer._createTimerHandler._handleTimeout (dart:io:7240:28)
+#2      _Timer._createTimerHandler._handleTimeout (dart:io:7248:7)
+#3      _Timer._createTimerHandler.<anonymous closure> (dart:io:7256:23)
+#4      _ReceivePortImpl._handleMessage (dart:isolate-patch:40:92)
+build.dart finished [593 ms]
+
+---
+build.dart --machine --changed=pubspec.yaml
+
+build.dart finished [191 ms]
+
+---
+build.dart --machine --changed=pubspec.lock
+
+build.dart finished [170 ms]
+
+---
+build.dart --machine --changed=pubspec.lock
+
+build.dart finished [171 ms]
+
+---
+build.dart --machine --changed=pubspec.lock
+
+build.dart finished [174 ms]
+
+---
+build.dart --machine --changed=pubspec.lock
+
+build.dart finished [191 ms]
+
+---
+build.dart --machine --changed=web/numberguess.dart
+[{"method":"mapping","params":{"from":"web/numberguess.html","to":"web/out/numberguess.html"}}]
+Total time spent on web/numberguess.html                     -- 185 ms
+build.dart finished [406 ms]
+
+---
+build.dart --machine --changed=web/out/numberguess.dart --changed=web/out/numberguess.html --changed=web/out/nu...
+
+build.dart finished [185 ms]
+
+---
+build.dart --machine --changed=web/numberguess.html
+[{"method":"mapping","params":{"from":"web/numberguess.html","to":"web/out/numberguess.html"}}]
+Total time spent on web/numberguess.html                     -- 152 ms
+build.dart finished [333 ms]
+
+---
+build.dart --machine --changed=web/out/numberguess.dart --changed=web/out/numberguess.html --changed=web/out/nu...
+
+build.dart finished [170 ms]
+
+---
+build.dart --machine --changed=web/numberguess.dart
+[{"method":"mapping","params":{"from":"web/numberguess.html","to":"web/out/numberguess.html"}}]
+Total time spent on web/numberguess.html                     -- 154 ms
+build.dart finished [351 ms]
+
+---
+build.dart --machine --changed=web/out/numberguess.dart --changed=web/out/numberguess.html --changed=web/out/nu...
+
+build.dart finished [174 ms]
+
+---
+build.dart --machine --changed=web/numberguess.dart
+[{"method":"mapping","params":{"from":"web/numberguess.html","to":"web/out/numberguess.html"}}]
+Total time spent on web/numberguess.html                     -- 160 ms
+build.dart finished [352 ms]
+
+---
+build.dart --machine --changed=web/out/numberguess.dart --changed=web/out/numberguess.html --changed=web/out/nu...
+
+build.dart finished [179 ms]
+
+---
+build.dart --machine --changed=web/numberguess.dart
+[{"method":"mapping","params":{"from":"web/numberguess.html","to":"web/out/numberguess.html"}}]
+Total time spent on web/numberguess.html                     -- 149 ms
+build.dart finished [322 ms]
+
+---
+build.dart --machine --changed=web/out/numberguess.dart --changed=web/out/numberguess.html --changed=web/out/nu...
+
+build.dart finished [176 ms]
+
+---
+build.dart --machine --changed=web/out/numberguess.dart --changed=web/out/numberguess.html --changed=web/out/nu...
+
+build.dart finished [220 ms]
+
+---
+build.dart --machine --changed=web/numberguess.css
+
+build.dart finished [167 ms]
+
+---
+build.dart --machine --changed=web/out/numberguess.dart --changed=web/out/numberguess.html --changed=web/out/nu...
+
+build.dart finished [206 ms]
+
+---
+build.dart --machine --changed=web/numberguess.dart.js --changed=web/numberguess.dart.js.deps --changed=web/num...
+
+build.dart finished [228 ms]
+
+---
+build.dart --machine --removed=web/numberguess.dart.js --removed=web/numberguess.dart.js.deps --removed=web/num...
+
+build.dart finished [180 ms]
+

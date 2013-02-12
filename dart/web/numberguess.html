@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sample app</title>
+    <link rel="stylesheet" href="numberguess.css">
+    
+    <!-- import the click-counter -->
+    <link rel="components" href="xclickcounter.html">
+  </head>
+  <body>
+    <h1>NumberGuess</h1>
+    
+    <p>Welcome to the Number Guessing Game</p>
+    
+    <div id="sample_container_id">
+      <div> Guess My Number: <input type="text" bind-value="guess" /></div> 
+      <button on-click="check()" > Guess</button>
+      <h2>{{result}}</h2>
+    </div>
+
+    <script type="application/dart" src="numberguess.dart"></script>
+    <script src="packages/browser/dart.js"></script>
+  </body>
+</html>
