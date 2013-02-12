@@ -103,3 +103,45 @@ namespace :ruby do
     system command
   end
 end
+
+namespace :js do
+  desc "Run the javascript example"
+  task :run do
+    open_browser "javascript/index.html"
+  end
+end
+
+namespace :coffee do
+  
+  desc "Build the coffee script file"
+  task :build do
+    command = "coffee -c coffeescript/number_guess.coffee "
+    system command
+  end
+  
+  desc "Run the coffeescript example"
+  task :run => :build do
+    open_browser "coffeescript/index.html"
+  end
+end
+namespace :scala do
+  desc "Run the Scala example"
+  task :run do
+    command = "scala scala/number_guess.scala"
+    system command
+  end
+end
+
+def open_browser(link)
+  command = ""
+  platform = RUBY_PLATFORM
+  if platform.include? "ms" 
+    command = "start"
+  elsif platform.include? "darwin"
+    command = "open"
+  else
+    command = "xdg-open"
+  end
+  system "#{command} #{link}"
+end
+  

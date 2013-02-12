@@ -10,7 +10,7 @@ Go
 Installing
 ^^^^^^^^^^^^^^
 
-1. Go to golang.org 
+1. Go to http://golang.org 
 2. Click on Binaries
 3. Download the binary for your platform
 4. install the binary and add it to your path
